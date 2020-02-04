@@ -27,6 +27,21 @@ extension UIViewController {
         }
     }
     
+    /// 현재 사용 기종 카테고리가 어떤건지 알 수 있도록 하는 프로퍼티
+    /// - if iPhone, will return Device.iPhone
+    /// - if iPad, will return Device.iPad
+    var isIphone: Device {
+        get {
+            let device = UIDevice().userInterfaceIdiom
+            if device == .phone {
+                return .iPhone
+            } else if device == .pad {
+                return .iPad
+            }
+            return .iPhone
+        }
+    }
+    
     /// 인디케이터 뷰 객체(싱글톤 객체) 가져오기
     var indicator: IndicatorView {
         get {
