@@ -10,5 +10,7 @@ import UIKit
 
 protocol BaseVCProtocol {
     
+    func initVC()
+    
     func setDarkModeUI()
 }

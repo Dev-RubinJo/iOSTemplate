@@ -11,10 +11,6 @@ import UIKit
 protocol SplashVCDelegate: class, BaseVCProtocol {
     
     var actor: SplashActorDelegate? { get set }
-    
-    func initVC()
-    
-    func setDarkModeUI()
 }
 
 protocol SplashVCRouterDelegate: class {

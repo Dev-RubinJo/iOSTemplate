@@ -9,8 +9,6 @@
 protocol MainVCDelegate: BaseVCProtocol {
     
     var actor: MainActorDelegate? { get set }
-    
-    func initVC()
 }
 
 protocol MainVCRouterDelegate: class {
