@@ -20,7 +20,7 @@ class SplashVC: BaseVC, SplashVCDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.initVC()
         // Do any additional setup after loading the view.
     }
     
@@ -62,7 +62,9 @@ extension SplashVC: SplashVCRouterDelegate {
     }
     
     func presentMainVC() {
-        
+        let mainVC = MainVC.viewRouter.makeMainVC()
+        self.window.rootViewController = mainVC
+        self.window.makeKeyAndVisible()
     }
     
     
