@@ -28,7 +28,7 @@ protocol SplashVCRouterDelegate: class {
 
 protocol SplashActorDelegate: class {
     
-    var view: (SplashVCDelegate & SplashVCRouterDelegate)? { get set }
+    var view: SplashVCRouterDelegate? { get set }
     
     var dataManager: SplashDataManagerDelegate? { get set }
     

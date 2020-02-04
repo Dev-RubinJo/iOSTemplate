@@ -49,7 +49,7 @@ class SplashVC: BaseVC, SplashVCDelegate {
 }
 extension SplashVC: SplashVCRouterDelegate {
     func makeSplashVC() -> SplashVC {
-        let vc = self
+        let vc = SplashVC()
         let actor = SplashActor.shared
         let dataManager = SplashDataManager.shared
         

@@ -13,7 +13,7 @@ class SplashActor: SplashActorDelegate {
     static let shared = SplashActor()
     private init() {}
     
-    weak var view: (SplashVCDelegate & SplashVCRouterDelegate)?
+    weak var view: SplashVCRouterDelegate?
     weak var dataManager: SplashDataManagerDelegate?
     
     func didLoadSplash(splashVC vc: SplashVC) {
