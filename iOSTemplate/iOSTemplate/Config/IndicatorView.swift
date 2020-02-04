@@ -22,12 +22,20 @@ open class IndicatorView {
         self.containerView.backgroundColor = UIColor(hex: 0x000000, alpha: 0.4)
         
         self.activityIndicator.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
-        self.activityIndicator.style = .whiteLarge
+        if #available(iOS 13.0, *) {
+            self.activityIndicator.style = UIActivityIndicatorView.Style.large
+        } else {
+            self.activityIndicator.style = .whiteLarge
+        }
         self.activityIndicator.color = UIColor(hex: ColorPalette.grayDarkMain, alpha: 1.0)
         self.activityIndicator.center = self.containerView.center
         
         self.containerView.addSubview(self.activityIndicator)
-        UIApplication.shared.keyWindow?.addSubview(self.containerView)
+        if #available(iOS 13.0, *) {
+            UIApplication.shared.windows.filter { $0.isKeyWindow }.first?.addSubview(self.containerView)
+        } else {
+            UIApplication.shared.keyWindow?.addSubview(self.containerView)
+        }
         
         self.activityIndicator.startAnimating()
     }

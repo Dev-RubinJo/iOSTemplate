@@ -36,7 +36,7 @@ extension String {
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .decimal // 소수점이 있는 경우 처리
         if let _ = self.range(of: ".") {
-            var numberArray = self.components(separatedBy: ".")
+            let numberArray = self.components(separatedBy: ".")
             if numberArray.count == 1 {
                 var numberString = numberArray[0]
                 if numberString.isEmpty {
