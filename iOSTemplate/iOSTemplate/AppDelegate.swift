@@ -7,25 +7,44 @@
 //
 
 import UIKit
+import AlamofireNetworkActivityIndicator
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
+    
+    /// Web API를 호출하기 위한 서버 주소
+    private let _baseUrl = "서버 ip주소"
+    
+    var baseUrl: String {
+        get {
+            return self._baseUrl
+        }
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        NetworkActivityIndicatorManager.shared.isEnabled = true
+        
+        if #available(iOS 13.0, *) {}
+        else {
+            self.window = UIWindow.init(frame: UIScreen.main.bounds)
+            self.window?.rootViewController = SplashVC.viewRouter.makeSplashVC()
+            self.window?.makeKeyAndVisible()
+        }
         return true
     }
-
+    
     // MARK: UISceneSession Lifecycle
-
+    @available(iOS 13.0, *)
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
         // Use this method to select a configuration to create the new scene with.
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
-
+    @available(iOS 13.0, *)
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
         // Called when the user discards a scene session.
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
