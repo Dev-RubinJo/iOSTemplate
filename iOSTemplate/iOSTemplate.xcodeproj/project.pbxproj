@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,16 @@
 		43E9A24B23E92DC6004616CC /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9A24A23E92DC6004616CC /* BaseVC.swift */; };
 		43E9A24D23E92DE3004616CC /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9A24C23E92DE3004616CC /* IndicatorView.swift */; };
 		43E9A24F23E92DF8004616CC /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9A24E23E92DF8004616CC /* ColorPalette.swift */; };
+		43E9A25223E92FEB004616CC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43E9A25423E92FEB004616CC /* Localizable.strings */; };
+		43E9A25723E93007004616CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43E9A25923E93007004616CC /* InfoPlist.strings */; };
+		43E9A26323E93103004616CC /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9A26123E93103004616CC /* SplashVC.swift */; };
+		43E9A26423E93103004616CC /* SplashVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E9A26223E93103004616CC /* SplashVC.xib */; };
+		43E9A26623E93112004616CC /* SplashActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9A26523E93112004616CC /* SplashActor.swift */; };
+		43E9A26823E9311F004616CC /* SplashDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9A26723E9311F004616CC /* SplashDataManager.swift */; };
+		43E9A26A23E9312A004616CC /* SplashDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9A26923E9312A004616CC /* SplashDataResponse.swift */; };
+		43E9A26C23E93134004616CC /* SplashProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9A26B23E93134004616CC /* SplashProtocol.swift */; };
+		43E9A26F23E93BC1004616CC /* SplashVC+SetUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9A26E23E93BC1004616CC /* SplashVC+SetUI.swift */; };
+		43E9A27223E93CED004616CC /* SplashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9A27123E93CED004616CC /* SplashTests.swift */; };
 		6CD07EE01A3E84E58EBF0D6C /* Pods_iOSTemplateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DACE222542434BF7E6126CB /* Pods_iOSTemplateTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +66,18 @@
 		43E9A24A23E92DC6004616CC /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		43E9A24C23E92DE3004616CC /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
 		43E9A24E23E92DF8004616CC /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		43E9A25323E92FEB004616CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		43E9A25823E93007004616CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		43E9A25A23E9302D004616CC /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		43E9A25B23E93031004616CC /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		43E9A26123E93103004616CC /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
+		43E9A26223E93103004616CC /* SplashVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashVC.xib; sourceTree = "<group>"; };
+		43E9A26523E93112004616CC /* SplashActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashActor.swift; sourceTree = "<group>"; };
+		43E9A26723E9311F004616CC /* SplashDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashDataManager.swift; sourceTree = "<group>"; };
+		43E9A26923E9312A004616CC /* SplashDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashDataResponse.swift; sourceTree = "<group>"; };
+		43E9A26B23E93134004616CC /* SplashProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashProtocol.swift; sourceTree = "<group>"; };
+		43E9A26E23E93BC1004616CC /* SplashVC+SetUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SplashVC+SetUI.swift"; sourceTree = "<group>"; };
+		43E9A27123E93CED004616CC /* SplashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashTests.swift; sourceTree = "<group>"; };
 		927FF0B8CC122548A0301628 /* Pods-iOSTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTemplate.release.xcconfig"; path = "Target Support Files/Pods-iOSTemplate/Pods-iOSTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		9DE45425625EB445E9E32ACB /* Pods-iOSTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTemplate.debug.xcconfig"; path = "Target Support Files/Pods-iOSTemplate/Pods-iOSTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		A6C20922366669EBFCC84E6C /* Pods-iOSTemplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTemplateTests.release.xcconfig"; path = "Target Support Files/Pods-iOSTemplateTests/Pods-iOSTemplateTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				43E9A23B23E92D21004616CC /* Config */,
+				43E9A25C23E930CC004616CC /* Splash */,
 				43E9A21923E92CDC004616CC /* AppDelegate.swift */,
 				43E9A21B23E92CDC004616CC /* SceneDelegate.swift */,
 				43E9A22223E92CE2004616CC /* Assets.xcassets */,
@@ -118,6 +141,7 @@
 		43E9A22F23E92CE3004616CC /* iOSTemplateTests */ = {
 			isa = PBXGroup;
 			children = (
+				43E9A27023E93CDC004616CC /* Splash */,
 				43E9A23023E92CE3004616CC /* iOSTemplateTests.swift */,
 				43E9A23223E92CE3004616CC /* Info.plist */,
 			);
@@ -132,6 +156,8 @@
 				43E9A24A23E92DC6004616CC /* BaseVC.swift */,
 				43E9A24C23E92DE3004616CC /* IndicatorView.swift */,
 				43E9A24E23E92DF8004616CC /* ColorPalette.swift */,
+				43E9A25423E92FEB004616CC /* Localizable.strings */,
+				43E9A25923E93007004616CC /* InfoPlist.strings */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -156,6 +182,68 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		43E9A25C23E930CC004616CC /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				43E9A26023E930E3004616CC /* View */,
+				43E9A25F23E930E1004616CC /* Actor */,
+				43E9A25E23E930DF004616CC /* Network */,
+				43E9A25D23E930D9004616CC /* Protocol */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		43E9A25D23E930D9004616CC /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				43E9A26B23E93134004616CC /* SplashProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		43E9A25E23E930DF004616CC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				43E9A26723E9311F004616CC /* SplashDataManager.swift */,
+				43E9A26923E9312A004616CC /* SplashDataResponse.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		43E9A25F23E930E1004616CC /* Actor */ = {
+			isa = PBXGroup;
+			children = (
+				43E9A26523E93112004616CC /* SplashActor.swift */,
+			);
+			path = Actor;
+			sourceTree = "<group>";
+		};
+		43E9A26023E930E3004616CC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				43E9A26D23E93BA9004616CC /* Extension */,
+				43E9A26123E93103004616CC /* SplashVC.swift */,
+				43E9A26223E93103004616CC /* SplashVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		43E9A26D23E93BA9004616CC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				43E9A26E23E93BC1004616CC /* SplashVC+SetUI.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		43E9A27023E93CDC004616CC /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				43E9A27123E93CED004616CC /* SplashTests.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
 		91B4C3DF8ACB5A308F4F97FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,7 +261,6 @@
 				B6190371CC9F1C3E3CF6EA93 /* Pods-iOSTemplateTests.debug.xcconfig */,
 				A6C20922366669EBFCC84E6C /* Pods-iOSTemplateTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -244,6 +331,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = 43E9A20D23E92CDC004616CC;
 			productRefGroup = 43E9A21723E92CDC004616CC /* Products */;
@@ -262,6 +350,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				43E9A22623E92CE2004616CC /* LaunchScreen.storyboard in Resources */,
+				43E9A25723E93007004616CC /* InfoPlist.strings in Resources */,
+				43E9A26423E93103004616CC /* SplashVC.xib in Resources */,
+				43E9A25223E92FEB004616CC /* Localizable.strings in Resources */,
 				43E9A22323E92CE2004616CC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,12 +440,18 @@
 				43E9A24123E92D57004616CC /* BaseVCProtocol.swift in Sources */,
 				43E9A21A23E92CDC004616CC /* AppDelegate.swift in Sources */,
 				43E9A24D23E92DE3004616CC /* IndicatorView.swift in Sources */,
+				43E9A26F23E93BC1004616CC /* SplashVC+SetUI.swift in Sources */,
+				43E9A26323E93103004616CC /* SplashVC.swift in Sources */,
 				43E9A24B23E92DC6004616CC /* BaseVC.swift in Sources */,
 				43E9A21C23E92CDC004616CC /* SceneDelegate.swift in Sources */,
 				43E9A24323E92D6D004616CC /* UIColor.swift in Sources */,
 				43E9A24923E92DA8004616CC /* String.swift in Sources */,
+				43E9A26823E9311F004616CC /* SplashDataManager.swift in Sources */,
+				43E9A26623E93112004616CC /* SplashActor.swift in Sources */,
+				43E9A26C23E93134004616CC /* SplashProtocol.swift in Sources */,
 				43E9A24523E92D80004616CC /* UIButton.swift in Sources */,
 				43E9A24F23E92DF8004616CC /* ColorPalette.swift in Sources */,
+				43E9A26A23E9312A004616CC /* SplashDataResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +459,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43E9A27223E93CED004616CC /* SplashTests.swift in Sources */,
 				43E9A23123E92CE3004616CC /* iOSTemplateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +483,24 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		43E9A25423E92FEB004616CC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43E9A25323E92FEB004616CC /* en */,
+				43E9A25A23E9302D004616CC /* ko */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		43E9A25923E93007004616CC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43E9A25823E93007004616CC /* en */,
+				43E9A25B23E93031004616CC /* ko */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -392,6 +508,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -452,6 +569,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
