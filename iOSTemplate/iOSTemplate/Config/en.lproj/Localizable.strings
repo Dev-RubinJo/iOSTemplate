@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  iOSTemplate
+
+  Created by YoobinJo on 2020/02/04.
+  Copyright © 2020 YoobinJo. All rights reserved.
+*/
+
+// SplashVC -> presentServerErrorAlert
+"SERVER_ERROR_TITLE" = "Server Error";
+"SERVER_ERROR_MESSAGE" = "Cannot connect Server";
+
+// SplashVC -> presentTokenErrorAlert
+"TOKEN_ERROR_TITLE" = "Token Error";
