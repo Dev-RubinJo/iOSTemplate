@@ -4,8 +4,10 @@
 
 ## User settings
 xcuserdata/
-
-Pods/
+iOSTemplate/.DS_Store
+iOSTemplate/Podfile.lock
+iOSTemplate/Pods/
+*/UserInterfaceState.xcuserstate
 
 ## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
 *.xcscmblueprint
