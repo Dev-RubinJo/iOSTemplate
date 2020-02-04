@@ -8,23 +8,62 @@
 
 import UIKit
 
-class SplashVC: UIViewController {
+class SplashVC: BaseVC, SplashVCDelegate {
+    
+    @IBOutlet weak var splashVCLabel: UILabel!
+    @IBOutlet weak var goToMainButton: UIButton!
+    
+    static let viewRouter: SplashVCRouterDelegate = SplashVC()
+    private let window: UIWindow = UIApplication.shared.windows.first ?? UIWindow.init(frame: UIScreen.main.bounds)
+    
+    weak var actor: SplashActorDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        self.setDarkModeUI()
     }
-    */
-
+    
+    func initVC() {
+        self.setSplashUI()
+        self.setDarkModeUI()
+        self.actor?.didLoadSplash(splashVC: self)
+    }
+    
+    func setDarkModeUI() {
+        if self.isDarkMode {
+            self.view.backgroundColor = UIColor(hex: ColorPalette.blackMain, alpha: 1.0)
+            self.splashVCLabel.textColor = .white
+            self.goToMainButton.setTitleColor(.white, for: .normal)
+        } else {
+            self.view.backgroundColor = .white
+            self.splashVCLabel.textColor = .black
+            self.goToMainButton.setTitleColor(.blue, for: .normal)
+        }
+    }
+}
+extension SplashVC: SplashVCRouterDelegate {
+    func makeSplashVC() -> SplashVC {
+        let vc = self
+        let actor = SplashActor.shared
+        let dataManager = SplashDataManager.shared
+        
+        vc.actor = actor
+        actor.view = vc
+        actor.dataManager = dataManager
+        dataManager.actor = actor
+        
+        return vc
+    }
+    
+    func presentMainVC() {
+        
+    }
+    
+    
 }

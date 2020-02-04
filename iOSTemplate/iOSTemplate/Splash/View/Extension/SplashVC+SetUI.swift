@@ -6,4 +6,14 @@
 //  Copyright © 2020 YoobinJo. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+extension SplashVC {
+    func setSplashUI() {
+        self.goToMainButton.addTarget(self, action: #selector(self.didTapGoToMainButton(_:)), for: .touchUpInside)
+    }
+    
+    @objc func didTapGoToMainButton(_ sender: UIButton) {
+        self.presentMainVC()
+    }
+}
