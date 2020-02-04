@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Basic Pop Up-->
+        <scene sceneID="LaE-4r-TZ5">
+            <objects>
+                <viewController storyboardIdentifier="BasicPopUp" useStoryboardIdentifierAsRestorationIdentifier="YES" id="axA-8D-pF4" customClass="BasicPopUp" customModule="iOSTemplate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aBs-gb-SC3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="my8-0Q-NWl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HnJ-vX-TfQ">
+                                <rect key="frame" x="42" y="348" width="330" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fg1-EX-Zfa">
+                                        <rect key="frame" x="64.5" y="40" width="201" height="41"/>
+                                        <string key="text">Basic Pop Up
+Main 화면을 바꾸시겠습니까?</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuG-Ak-V91">
+                                        <rect key="frame" x="90" y="140" width="50" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="6HZ-xn-zfL"/>
+                                            <constraint firstAttribute="height" constant="40" id="BiW-a5-EHY"/>
+                                        </constraints>
+                                        <state key="normal" title="No">
+                                            <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDC-HZ-5OU">
+                                        <rect key="frame" x="190" y="140" width="50" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="LiE-gC-pKi"/>
+                                            <constraint firstAttribute="height" constant="40" id="TzZ-FW-eRx"/>
+                                        </constraints>
+                                        <state key="normal" title="Yes"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="WuG-Ak-V91" secondAttribute="bottom" constant="20" id="1Gi-q9-0oe"/>
+                                    <constraint firstItem="xDC-HZ-5OU" firstAttribute="centerX" secondItem="HnJ-vX-TfQ" secondAttribute="centerX" constant="50" id="Fa4-E9-Gaz"/>
+                                    <constraint firstItem="WuG-Ak-V91" firstAttribute="centerX" secondItem="HnJ-vX-TfQ" secondAttribute="centerX" constant="-50" id="Kro-LM-VVM"/>
+                                    <constraint firstAttribute="bottom" secondItem="xDC-HZ-5OU" secondAttribute="bottom" constant="20" id="Sex-Km-Ozz"/>
+                                    <constraint firstItem="fg1-EX-Zfa" firstAttribute="top" secondItem="HnJ-vX-TfQ" secondAttribute="top" constant="40" id="izu-xO-eTg"/>
+                                    <constraint firstAttribute="height" constant="200" id="mgM-Ql-LDc"/>
+                                    <constraint firstItem="fg1-EX-Zfa" firstAttribute="centerX" secondItem="HnJ-vX-TfQ" secondAttribute="centerX" id="ygx-iS-k7u"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HnJ-vX-TfQ" firstAttribute="centerX" secondItem="aBs-gb-SC3" secondAttribute="centerX" id="84a-fH-bEY"/>
+                            <constraint firstItem="my8-0Q-NWl" firstAttribute="leading" secondItem="aBs-gb-SC3" secondAttribute="leading" id="Dze-qO-3dc"/>
+                            <constraint firstAttribute="bottom" secondItem="my8-0Q-NWl" secondAttribute="bottom" id="NmC-Cz-iye"/>
+                            <constraint firstItem="yea-Tk-YeF" firstAttribute="trailing" secondItem="HnJ-vX-TfQ" secondAttribute="trailing" constant="42" id="NoX-wp-m0o"/>
+                            <constraint firstItem="HnJ-vX-TfQ" firstAttribute="leading" secondItem="yea-Tk-YeF" secondAttribute="leading" constant="42" id="YKN-JN-88E"/>
+                            <constraint firstItem="my8-0Q-NWl" firstAttribute="top" secondItem="aBs-gb-SC3" secondAttribute="top" id="e14-N9-gln"/>
+                            <constraint firstItem="HnJ-vX-TfQ" firstAttribute="centerY" secondItem="aBs-gb-SC3" secondAttribute="centerY" id="olX-m6-aaW"/>
+                            <constraint firstAttribute="trailing" secondItem="my8-0Q-NWl" secondAttribute="trailing" id="sVl-xW-aW6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yea-Tk-YeF"/>
+                    </view>
+                    <connections>
+                        <outlet property="basicPopUpNoButton" destination="WuG-Ak-V91" id="FGp-Fy-UNu"/>
+                        <outlet property="basicPopUpView" destination="HnJ-vX-TfQ" id="T3f-rQ-GJQ"/>
+                        <outlet property="basicPopUpYesButton" destination="xDC-HZ-5OU" id="lA0-5S-dyP"/>
+                        <outlet property="outsideView" destination="my8-0Q-NWl" id="ntg-Cx-VWa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jpG-HF-Z2T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="149" y="117"/>
+        </scene>
+    </scenes>
+</document>

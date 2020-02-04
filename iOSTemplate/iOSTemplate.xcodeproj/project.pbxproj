@@ -32,6 +32,17 @@
 		43E9A26C23E93134004616CC /* SplashProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9A26B23E93134004616CC /* SplashProtocol.swift */; };
 		43E9A26F23E93BC1004616CC /* SplashVC+SetUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9A26E23E93BC1004616CC /* SplashVC+SetUI.swift */; };
 		43E9A27223E93CED004616CC /* SplashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9A27123E93CED004616CC /* SplashTests.swift */; };
+		43E9A27923E946A9004616CC /* MainProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9A27823E946A9004616CC /* MainProtocol.swift */; };
+		43E9A27B23E946E1004616CC /* MainDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9A27A23E946E1004616CC /* MainDataManager.swift */; };
+		43E9A27D23E946EA004616CC /* MainDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9A27C23E946EA004616CC /* MainDataResponse.swift */; };
+		43E9A27F23E946F6004616CC /* MainActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9A27E23E946F6004616CC /* MainActor.swift */; };
+		43E9A28223E94704004616CC /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9A28023E94704004616CC /* MainVC.swift */; };
+		43E9A28323E94704004616CC /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E9A28123E94704004616CC /* MainVC.xib */; };
+		43E9A28723E949D0004616CC /* MainVC+PopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9A28623E949D0004616CC /* MainVC+PopUp.swift */; };
+		43E9A28B23E94A20004616CC /* BasicPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E9A28A23E94A20004616CC /* BasicPopUp.storyboard */; };
+		43E9A28D23E94A43004616CC /* BasicPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9A28C23E94A43004616CC /* BasicPopUp.swift */; };
+		43E9A28F23E94A55004616CC /* BasicPopUpDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9A28E23E94A55004616CC /* BasicPopUpDelegate.swift */; };
+		43E9A29223E94DCA004616CC /* MainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9A29123E94DCA004616CC /* MainTests.swift */; };
 		6CD07EE01A3E84E58EBF0D6C /* Pods_iOSTemplateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DACE222542434BF7E6126CB /* Pods_iOSTemplateTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +89,17 @@
 		43E9A26B23E93134004616CC /* SplashProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashProtocol.swift; sourceTree = "<group>"; };
 		43E9A26E23E93BC1004616CC /* SplashVC+SetUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SplashVC+SetUI.swift"; sourceTree = "<group>"; };
 		43E9A27123E93CED004616CC /* SplashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashTests.swift; sourceTree = "<group>"; };
+		43E9A27823E946A9004616CC /* MainProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProtocol.swift; sourceTree = "<group>"; };
+		43E9A27A23E946E1004616CC /* MainDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataManager.swift; sourceTree = "<group>"; };
+		43E9A27C23E946EA004616CC /* MainDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataResponse.swift; sourceTree = "<group>"; };
+		43E9A27E23E946F6004616CC /* MainActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainActor.swift; sourceTree = "<group>"; };
+		43E9A28023E94704004616CC /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		43E9A28123E94704004616CC /* MainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
+		43E9A28623E949D0004616CC /* MainVC+PopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainVC+PopUp.swift"; sourceTree = "<group>"; };
+		43E9A28A23E94A20004616CC /* BasicPopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BasicPopUp.storyboard; sourceTree = "<group>"; };
+		43E9A28C23E94A43004616CC /* BasicPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicPopUp.swift; sourceTree = "<group>"; };
+		43E9A28E23E94A55004616CC /* BasicPopUpDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicPopUpDelegate.swift; sourceTree = "<group>"; };
+		43E9A29123E94DCA004616CC /* MainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTests.swift; sourceTree = "<group>"; };
 		927FF0B8CC122548A0301628 /* Pods-iOSTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTemplate.release.xcconfig"; path = "Target Support Files/Pods-iOSTemplate/Pods-iOSTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		9DE45425625EB445E9E32ACB /* Pods-iOSTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTemplate.debug.xcconfig"; path = "Target Support Files/Pods-iOSTemplate/Pods-iOSTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		A6C20922366669EBFCC84E6C /* Pods-iOSTemplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTemplateTests.release.xcconfig"; path = "Target Support Files/Pods-iOSTemplateTests/Pods-iOSTemplateTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +151,7 @@
 			children = (
 				43E9A23B23E92D21004616CC /* Config */,
 				43E9A25C23E930CC004616CC /* Splash */,
+				43E9A27323E94676004616CC /* Main */,
 				43E9A21923E92CDC004616CC /* AppDelegate.swift */,
 				43E9A21B23E92CDC004616CC /* SceneDelegate.swift */,
 				43E9A22223E92CE2004616CC /* Assets.xcassets */,
@@ -141,6 +164,7 @@
 		43E9A22F23E92CE3004616CC /* iOSTemplateTests */ = {
 			isa = PBXGroup;
 			children = (
+				43E9A29023E94DBD004616CC /* Main */,
 				43E9A27023E93CDC004616CC /* Splash */,
 				43E9A23023E92CE3004616CC /* iOSTemplateTests.swift */,
 				43E9A23223E92CE3004616CC /* Info.plist */,
@@ -242,6 +266,79 @@
 				43E9A27123E93CED004616CC /* SplashTests.swift */,
 			);
 			path = Splash;
+			sourceTree = "<group>";
+		};
+		43E9A27323E94676004616CC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				43E9A27723E9468E004616CC /* View */,
+				43E9A27623E9468C004616CC /* Actor */,
+				43E9A27523E9468A004616CC /* Network */,
+				43E9A27423E94687004616CC /* Protocol */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		43E9A27423E94687004616CC /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				43E9A27823E946A9004616CC /* MainProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		43E9A27523E9468A004616CC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				43E9A27A23E946E1004616CC /* MainDataManager.swift */,
+				43E9A27C23E946EA004616CC /* MainDataResponse.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		43E9A27623E9468C004616CC /* Actor */ = {
+			isa = PBXGroup;
+			children = (
+				43E9A27E23E946F6004616CC /* MainActor.swift */,
+			);
+			path = Actor;
+			sourceTree = "<group>";
+		};
+		43E9A27723E9468E004616CC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				43E9A28523E949B6004616CC /* Extension */,
+				43E9A28423E949AE004616CC /* PopUp */,
+				43E9A28023E94704004616CC /* MainVC.swift */,
+				43E9A28123E94704004616CC /* MainVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		43E9A28423E949AE004616CC /* PopUp */ = {
+			isa = PBXGroup;
+			children = (
+				43E9A28A23E94A20004616CC /* BasicPopUp.storyboard */,
+				43E9A28C23E94A43004616CC /* BasicPopUp.swift */,
+				43E9A28E23E94A55004616CC /* BasicPopUpDelegate.swift */,
+			);
+			path = PopUp;
+			sourceTree = "<group>";
+		};
+		43E9A28523E949B6004616CC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				43E9A28623E949D0004616CC /* MainVC+PopUp.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		43E9A29023E94DBD004616CC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				43E9A29123E94DCA004616CC /* MainTests.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		91B4C3DF8ACB5A308F4F97FD /* Frameworks */ = {
@@ -352,6 +449,8 @@
 				43E9A22623E92CE2004616CC /* LaunchScreen.storyboard in Resources */,
 				43E9A25723E93007004616CC /* InfoPlist.strings in Resources */,
 				43E9A26423E93103004616CC /* SplashVC.xib in Resources */,
+				43E9A28323E94704004616CC /* MainVC.xib in Resources */,
+				43E9A28B23E94A20004616CC /* BasicPopUp.storyboard in Resources */,
 				43E9A25223E92FEB004616CC /* Localizable.strings in Resources */,
 				43E9A22323E92CE2004616CC /* Assets.xcassets in Resources */,
 			);
@@ -437,16 +536,24 @@
 			files = (
 				43E9A24723E92D93004616CC /* UIViewController.swift in Sources */,
 				43E9A23F23E92D44004616CC /* PopUpProtocol.swift in Sources */,
+				43E9A27923E946A9004616CC /* MainProtocol.swift in Sources */,
+				43E9A27D23E946EA004616CC /* MainDataResponse.swift in Sources */,
+				43E9A28F23E94A55004616CC /* BasicPopUpDelegate.swift in Sources */,
 				43E9A24123E92D57004616CC /* BaseVCProtocol.swift in Sources */,
 				43E9A21A23E92CDC004616CC /* AppDelegate.swift in Sources */,
 				43E9A24D23E92DE3004616CC /* IndicatorView.swift in Sources */,
 				43E9A26F23E93BC1004616CC /* SplashVC+SetUI.swift in Sources */,
 				43E9A26323E93103004616CC /* SplashVC.swift in Sources */,
+				43E9A27F23E946F6004616CC /* MainActor.swift in Sources */,
 				43E9A24B23E92DC6004616CC /* BaseVC.swift in Sources */,
 				43E9A21C23E92CDC004616CC /* SceneDelegate.swift in Sources */,
 				43E9A24323E92D6D004616CC /* UIColor.swift in Sources */,
 				43E9A24923E92DA8004616CC /* String.swift in Sources */,
 				43E9A26823E9311F004616CC /* SplashDataManager.swift in Sources */,
+				43E9A28723E949D0004616CC /* MainVC+PopUp.swift in Sources */,
+				43E9A28223E94704004616CC /* MainVC.swift in Sources */,
+				43E9A28D23E94A43004616CC /* BasicPopUp.swift in Sources */,
+				43E9A27B23E946E1004616CC /* MainDataManager.swift in Sources */,
 				43E9A26623E93112004616CC /* SplashActor.swift in Sources */,
 				43E9A26C23E93134004616CC /* SplashProtocol.swift in Sources */,
 				43E9A24523E92D80004616CC /* UIButton.swift in Sources */,
@@ -460,6 +567,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43E9A27223E93CED004616CC /* SplashTests.swift in Sources */,
+				43E9A29223E94DCA004616CC /* MainTests.swift in Sources */,
 				43E9A23123E92CE3004616CC /* iOSTemplateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
