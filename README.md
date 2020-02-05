@@ -43,4 +43,12 @@ Pure Swift의 느낌으로 가고싶어서 스위프트 공부를 병행하며 �
 
 ---
 
+#### 참고 링크
+
+* [MVVM, MVC, VIPER 패턴에 대한 글](https://academy.realm.io/kr/posts/krzysztof-zablocki-mDevCamp-ios-architecture-mvvm-mvc-viper/) : 제가 참고했던 MVC, VIPER 패턴 뿐만 아니라 MVVM 패턴까지 같이 정리되어있는 글입니다. 영상과 함께 보시면 더욱 좋습니다.
+* [iOS 아키텍쳐 패턴 - VIPER](https://nightohl.tistory.com/entry/iOS-아키텍처-패턴-VIPER) : VIPER 패턴에 대해 좀더 간단하게 그리고 직관적으로 알 수 있게 정리된 블로그 입니다.
+* [iOS Swift 개발 디자인 패턴 - Singleton, MVC](http://blog.naver.com/jdub7138/220968244920) : 전반적인 디자인 패턴에 관해서 설명이 잘 되어있는 글입니다. 중간에 MVC에 대한 개념 정리가 잘 되어있어서 추가를 하였습니다.
+
+
+
 **Dev-Rubin**
