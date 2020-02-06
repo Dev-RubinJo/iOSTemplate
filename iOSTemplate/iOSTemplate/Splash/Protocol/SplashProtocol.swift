@@ -18,8 +18,6 @@ protocol SplashVCRouterDelegate: class {
     func makeSplashVC() -> SplashVC
     
     func presentMainVC()
-    
-    
 }
 
 protocol SplashActorDelegate: class {
