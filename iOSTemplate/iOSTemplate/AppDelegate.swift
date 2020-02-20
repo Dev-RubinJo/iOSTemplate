@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if #available(iOS 13.0, *) {}
         else {
             self.window = UIWindow.init(frame: UIScreen.main.bounds)
-            self.window?.rootViewController = SplashVC.viewRouter.makeSplashVC()
+            self.window?.rootViewController = SplashVC.makeSplashVC()
             self.window?.makeKeyAndVisible()
         }
         return true

@@ -15,7 +15,7 @@ protocol SplashVCDelegate: class, BaseVCProtocol {
 
 protocol SplashVCRouterDelegate: class {
     
-    func makeSplashVC() -> SplashVC
+    static func makeSplashVC() -> SplashVC
     
     func presentMainVC()
 }

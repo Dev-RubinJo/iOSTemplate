@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
         self.window?.windowScene = windowScene
-        self.window?.rootViewController = SplashVC.viewRouter.makeSplashVC()
+        self.window?.rootViewController = SplashVC.makeSplashVC()
         self.window?.makeKeyAndVisible()
     }
 

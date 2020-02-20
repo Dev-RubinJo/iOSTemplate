@@ -24,7 +24,7 @@ class SplashActor: SplashActorDelegate {
             }
             return
         }
-        // self.dataManager?.checkToken(fromVC: vc, token)
+         self.dataManager?.checkToken(fromVC: vc, token)
     }
     
     func validToken() {

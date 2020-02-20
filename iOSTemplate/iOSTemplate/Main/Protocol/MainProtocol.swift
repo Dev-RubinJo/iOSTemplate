@@ -13,7 +13,7 @@ protocol MainVCDelegate: BaseVCProtocol {
 
 protocol MainVCRouterDelegate: class {
     
-    func makeMainVC() -> MainVC
+    static func makeMainVC() -> MainVC
 }
 
 protocol MainActorDelegate: class {

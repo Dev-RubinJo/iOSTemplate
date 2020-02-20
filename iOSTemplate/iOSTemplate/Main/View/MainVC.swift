@@ -12,8 +12,6 @@ class MainVC: BaseVC, MainVCDelegate {
     
     @IBOutlet weak var mainVCLabel: UILabel!
     
-    static let viewRouter: MainVCRouterDelegate = MainVC()
-    
     weak var actor: MainActorDelegate?
     
     override func viewDidLoad() {
@@ -29,25 +27,34 @@ class MainVC: BaseVC, MainVCDelegate {
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)
-        self.setDarkModeUI()
+        self.setSystemColorModeUI()
     }
     
     func initVC() {
-        self.setDarkModeUI()
+        self.setSystemColorModeUI()
+    }
+    
+    func setLightModeUI() {
+        self.view.backgroundColor = .white
+        self.mainVCLabel.textColor = .black
     }
     
     func setDarkModeUI() {
+        self.view.backgroundColor = UIColor(hex: ColorPalette.blackMain, alpha: 1.0)
+        self.mainVCLabel.textColor = .white
+    }
+    
+    func setSystemColorModeUI() {
         if self.isDarkMode {
-            self.view.backgroundColor = UIColor(hex: ColorPalette.blackMain, alpha: 1.0)
-            self.mainVCLabel.textColor = .white
+            self.setDarkModeUI()
         } else {
-            self.view.backgroundColor = .white
-            self.mainVCLabel.textColor = .black
+            self.setLightModeUI()
         }
     }
 }
 extension MainVC: MainVCRouterDelegate {
-    func makeMainVC() -> MainVC {
+    
+    static func makeMainVC() -> MainVC {
         let vc = MainVC()
         let actor = MainActor.shared
         let dataManager = MainDataManager.shared
