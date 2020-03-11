@@ -13,9 +13,7 @@ class SplashVC: BaseVC, SplashVCDelegate {
     @IBOutlet weak var splashVCLabel: UILabel!
     @IBOutlet weak var goToMainButton: UIButton!
     
-    private let window: UIWindow = UIApplication.shared.windows.first ?? UIWindow.init(frame: UIScreen.main.bounds)
-    
-    weak var actor: SplashActorDelegate?
+    var actor: SplashActorDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,26 +44,4 @@ class SplashVC: BaseVC, SplashVCDelegate {
         }
     }
 }
-extension SplashVC: SplashVCRouterDelegate {
-    
-    static func makeSplashVC() -> SplashVC {
-        let vc = SplashVC()
-        let actor = SplashActor.shared
-        let dataManager = SplashDataManager.shared
-        
-        vc.actor = actor
-        actor.view = vc
-        actor.dataManager = dataManager
-        dataManager.actor = actor
-        
-        return vc
-    }
-    
-    func presentMainVC() {
-        let mainVC = MainVC.makeMainVC()
-        self.window.rootViewController = mainVC
-        self.window.makeKeyAndVisible()
-    }
-    
-    
-}
+

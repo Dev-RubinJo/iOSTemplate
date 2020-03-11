@@ -12,9 +12,6 @@ import AlamofireObjectMapper
 
 class SplashDataManager: SplashDataManagerDelegate {
     
-    static let shared = SplashDataManager()
-    private init() {}
-    
     private let appDelegate = UIApplication.shared.delegate as? AppDelegate
     
     weak var actor: SplashActorDelegate?

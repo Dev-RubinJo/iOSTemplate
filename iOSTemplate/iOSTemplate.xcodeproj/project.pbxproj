@@ -44,6 +44,7 @@
 		43E9A28D23E94A43004616CC /* BasicPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9A28C23E94A43004616CC /* BasicPopUp.swift */; };
 		43E9A28F23E94A55004616CC /* BasicPopUpDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9A28E23E94A55004616CC /* BasicPopUpDelegate.swift */; };
 		43E9A29223E94DCA004616CC /* MainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9A29123E94DCA004616CC /* MainTests.swift */; };
+		43FF1361241E0FD600C89F66 /* SplashVC+Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FF1360241E0FD600C89F66 /* SplashVC+Router.swift */; };
 		6CD07EE01A3E84E58EBF0D6C /* Pods_iOSTemplateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DACE222542434BF7E6126CB /* Pods_iOSTemplateTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +103,7 @@
 		43E9A28C23E94A43004616CC /* BasicPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicPopUp.swift; sourceTree = "<group>"; };
 		43E9A28E23E94A55004616CC /* BasicPopUpDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicPopUpDelegate.swift; sourceTree = "<group>"; };
 		43E9A29123E94DCA004616CC /* MainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTests.swift; sourceTree = "<group>"; };
+		43FF1360241E0FD600C89F66 /* SplashVC+Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SplashVC+Router.swift"; sourceTree = "<group>"; };
 		927FF0B8CC122548A0301628 /* Pods-iOSTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTemplate.release.xcconfig"; path = "Target Support Files/Pods-iOSTemplate/Pods-iOSTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		9DE45425625EB445E9E32ACB /* Pods-iOSTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTemplate.debug.xcconfig"; path = "Target Support Files/Pods-iOSTemplate/Pods-iOSTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		A6C20922366669EBFCC84E6C /* Pods-iOSTemplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTemplateTests.release.xcconfig"; path = "Target Support Files/Pods-iOSTemplateTests/Pods-iOSTemplateTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 				43E9A26D23E93BA9004616CC /* Extension */,
 				43E9A26123E93103004616CC /* SplashVC.swift */,
 				43E9A26223E93103004616CC /* SplashVC.xib */,
+				43FF1360241E0FD600C89F66 /* SplashVC+Router.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -557,6 +560,7 @@
 				43E9A26323E93103004616CC /* SplashVC.swift in Sources */,
 				43E9A27F23E946F6004616CC /* MainActor.swift in Sources */,
 				43E9A24B23E92DC6004616CC /* BaseVC.swift in Sources */,
+				43FF1361241E0FD600C89F66 /* SplashVC+Router.swift in Sources */,
 				43E9A21C23E92CDC004616CC /* SceneDelegate.swift in Sources */,
 				430B5A3623E99E7D00DDDB89 /* Device.swift in Sources */,
 				43E9A24323E92D6D004616CC /* UIColor.swift in Sources */,

@@ -10,11 +10,8 @@ import UIKit
 
 class SplashActor: SplashActorDelegate {
     
-    static let shared = SplashActor()
-    private init() {}
-    
     weak var view: SplashVCRouterDelegate?
-    weak var dataManager: SplashDataManagerDelegate?
+    var dataManager: SplashDataManagerDelegate?
     
     func didLoadSplash(splashVC vc: SplashVC) {
         guard let token = UserDefaults.standard.value(forKey: "LoginToken") as? String else {
