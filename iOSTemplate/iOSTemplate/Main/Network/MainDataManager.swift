@@ -13,9 +13,6 @@ class MainDataManager: MainDataManagerDelegate {
     
     private let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
-    static let shared = MainDataManager()
-    private init() {}
-    
     weak var actor: MainActorDelegate?
     
     func mainDataFetch(originVC vc: MainVC, userId: String) {

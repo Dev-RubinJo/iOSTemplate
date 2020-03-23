@@ -9,12 +9,9 @@
 import UIKit
 
 class MainActor: MainActorDelegate {
-    
-    static let shared = MainActor()
-    private init() {}
-    
+
     weak var view: (MainVCDelegate & MainVCRouterDelegate)?
-    weak var dataManager: MainDataManagerDelegate?
+    var dataManager: MainDataManagerDelegate?
     
     func getMainData(needVC vc: MainVC) {
         guard let userId = UserDefaults.standard.value(forKey: "UserId") as? String else {

@@ -12,7 +12,7 @@ class MainVC: BaseVC, MainVCDelegate {
     
     @IBOutlet weak var mainVCLabel: UILabel!
     
-    weak var actor: MainActorDelegate?
+    var actor: MainActorDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,8 +56,8 @@ extension MainVC: MainVCRouterDelegate {
     
     static func makeMainVC() -> MainVC {
         let vc = MainVC()
-        let actor = MainActor.shared
-        let dataManager = MainDataManager.shared
+        let actor = MainActor()
+        let dataManager = MainDataManager()
         
         vc.actor = actor
         actor.view = vc
