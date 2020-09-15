@@ -11,9 +11,7 @@ import Alamofire
 import AlamofireObjectMapper
 
 class SplashDataManager: SplashDataManagerDelegate {
-    
-    private let appDelegate = UIApplication.shared.delegate as? AppDelegate
-    
+
     weak var actor: SplashActorDelegate?
     
     func checkToken(fromVC vc: SplashVC, _ token: String) {
@@ -21,7 +19,7 @@ class SplashDataManager: SplashDataManagerDelegate {
         let headers = ["Content-Type": "application/json"]
         let parameters: Parameters = ["token": token]
         
-        Alamofire.request("\(self.appDelegate!.baseUrl)/api_example", method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
+        Alamofire.request("\(Server.api)/api_example", method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
         .validate()
             .responseObject(completionHandler: { (response: DataResponse<SplashDataResponse>) in
                 switch response.result {

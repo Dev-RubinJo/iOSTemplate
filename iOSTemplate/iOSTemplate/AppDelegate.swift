@@ -13,15 +13,6 @@ import AlamofireNetworkActivityIndicator
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
-    /// Web API를 호출하기 위한 서버 주소
-    private let _baseUrl = "서버 ip주소"
-    
-    var baseUrl: String {
-        get {
-            return self._baseUrl
-        }
-    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

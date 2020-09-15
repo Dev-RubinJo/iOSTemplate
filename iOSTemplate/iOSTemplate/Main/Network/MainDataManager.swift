@@ -11,12 +11,10 @@ import AlamofireObjectMapper
 
 class MainDataManager: MainDataManagerDelegate {
     
-    private let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    
     weak var actor: MainActorDelegate?
     
     func mainDataFetch(originVC vc: MainVC, userId: String) {
-        Alamofire.request("\(self.appDelegate.baseUrl)/getData/\(userId)", method: .get)
+        Alamofire.request("\(Server.api)/getData/\(userId)", method: .get)
             .validate()
             .responseObject(completionHandler: { (response: DataResponse<MainDataResponse>) in
                 switch response.result {

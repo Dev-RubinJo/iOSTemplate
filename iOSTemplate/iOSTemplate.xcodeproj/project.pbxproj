@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		144DED56C3DE716BE865AD1E /* Pods_iOSTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 212AD882DDE04997F86F22AD /* Pods_iOSTemplate.framework */; };
 		430B5A3623E99E7D00DDDB89 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430B5A3523E99E7D00DDDB89 /* Device.swift */; };
+		4341DCA924321EC50003372A /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4341DCA824321EC50003372A /* Server.swift */; };
 		43E9A21A23E92CDC004616CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9A21923E92CDC004616CC /* AppDelegate.swift */; };
 		43E9A21C23E92CDC004616CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9A21B23E92CDC004616CC /* SceneDelegate.swift */; };
 		43E9A22323E92CE2004616CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E9A22223E92CE2004616CC /* Assets.xcassets */; };
@@ -62,6 +63,7 @@
 		212AD882DDE04997F86F22AD /* Pods_iOSTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DACE222542434BF7E6126CB /* Pods_iOSTemplateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSTemplateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		430B5A3523E99E7D00DDDB89 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		4341DCA824321EC50003372A /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 		43E9A21623E92CDC004616CC /* iOSTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E9A21923E92CDC004616CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43E9A21B23E92CDC004616CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				43E9A24A23E92DC6004616CC /* BaseVC.swift */,
 				43E9A24C23E92DE3004616CC /* IndicatorView.swift */,
 				43E9A24E23E92DF8004616CC /* ColorPalette.swift */,
+				4341DCA824321EC50003372A /* Server.swift */,
 				43E9A25423E92FEB004616CC /* Localizable.strings */,
 				43E9A25923E93007004616CC /* InfoPlist.strings */,
 			);
@@ -562,6 +565,7 @@
 				43E9A24B23E92DC6004616CC /* BaseVC.swift in Sources */,
 				43FF1361241E0FD600C89F66 /* SplashVC+Router.swift in Sources */,
 				43E9A21C23E92CDC004616CC /* SceneDelegate.swift in Sources */,
+				4341DCA924321EC50003372A /* Server.swift in Sources */,
 				430B5A3623E99E7D00DDDB89 /* Device.swift in Sources */,
 				43E9A24323E92D6D004616CC /* UIColor.swift in Sources */,
 				43E9A24923E92DA8004616CC /* String.swift in Sources */,
