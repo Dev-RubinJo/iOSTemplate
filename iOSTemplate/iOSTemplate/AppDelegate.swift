@@ -19,12 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         NetworkActivityIndicatorManager.shared.isEnabled = true
         
-        if #available(iOS 13.0, *) {}
-        else {
-            self.window = UIWindow.init(frame: UIScreen.main.bounds)
-            self.window?.rootViewController = SplashVC.makeSplashVC()
-            self.window?.makeKeyAndVisible()
-        }
         return true
     }
     

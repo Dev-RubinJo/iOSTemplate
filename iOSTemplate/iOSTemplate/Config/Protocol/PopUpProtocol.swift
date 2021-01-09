@@ -8,5 +8,5 @@
 
 protocol PopUpProtocol: class {
     
-    func setPopUpUI()
+    func configurePopUpUI()
 }

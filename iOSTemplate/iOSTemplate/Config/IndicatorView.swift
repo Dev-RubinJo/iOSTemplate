@@ -27,7 +27,7 @@ open class IndicatorView {
         } else {
             self.activityIndicator.style = .whiteLarge
         }
-        self.activityIndicator.color = UIColor(hex: ColorPalette.grayDarkMain, alpha: 1.0)
+        self.activityIndicator.color = .grayDarkMain
         self.activityIndicator.center = self.containerView.center
         
         self.containerView.addSubview(self.activityIndicator)

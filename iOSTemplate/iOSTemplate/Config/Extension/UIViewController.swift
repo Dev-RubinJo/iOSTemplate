@@ -30,7 +30,7 @@ extension UIViewController {
     /// 현재 사용 기종 카테고리가 어떤건지 알 수 있도록 하는 프로퍼티
     /// - if iPhone, will return Device.iPhone
     /// - if iPad, will return Device.iPad
-    var isIphone: Device {
+    var checkDevice: Device {
         get {
             let device = UIDevice().userInterfaceIdiom
             if device == .phone {
@@ -49,6 +49,7 @@ extension UIViewController {
         }
     }
     
+    /// 키보드를 사용하는 ViewController에서 다른 영역 탭 했을때 키보드 내려가게 하는 메서드
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer =
             UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
@@ -60,7 +61,7 @@ extension UIViewController {
         self.view.endEditing(true)
     }
     
-    // MARK: 확인만 뜨는 UIAlertController
+    /// 확인만 뜨는 UIAlertController
     func presentAlert(title: String, message: String?) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let actionDone = UIAlertAction(title: "확인", style: .default, handler: nil)
@@ -68,7 +69,7 @@ extension UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
-    // MARK: 커스텀 버튼과 취소가 뜨는 UIAlertController
+    /// 커스텀 버튼과 취소가 뜨는 UIAlertController
     func presentAlertWithAction(title: String, message: String, _ actionCustom: UIAlertAction) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let actionCancel = UIAlertAction(title: "취소", style: .default, handler: nil)

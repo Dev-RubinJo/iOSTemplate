@@ -10,38 +10,47 @@ import UIKit
 
 class SplashVC: BaseVC, SplashVCDelegate {
     
+    // MARK: - IBOutlet
+    
     @IBOutlet weak var splashVCLabel: UILabel!
     @IBOutlet weak var goToMainButton: UIButton!
     
+    // MARK: - Properties
+    
     var actor: SplashActorDelegate?
+    
+    // MARK: - LifeCycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.initVC()
-        // Do any additional setup after loading the view.
+        configureUI()
     }
     
-    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-        super.traitCollectionDidChange(previousTraitCollection)
-        self.setDarkModeUI()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        actor?.didLoadSplash(splashVC: self)
     }
     
-    func initVC() {
-        self.setSplashUI()
-        self.setDarkModeUI()
-        self.actor?.didLoadSplash(splashVC: self)
+    deinit {
+        print("SplashVC is deinit")
     }
     
-    func setDarkModeUI() {
-        if self.isDarkMode {
-            self.view.backgroundColor = UIColor(hex: ColorPalette.blackMain, alpha: 1.0)
-            self.splashVCLabel.textColor = .white
-            self.goToMainButton.setTitleColor(.white, for: .normal)
-        } else {
-            self.view.backgroundColor = .white
-            self.splashVCLabel.textColor = .black
-            self.goToMainButton.setTitleColor(.blue, for: .normal)
-        }
+    // MARK: - Selector
+    
+    @objc func didTapGoToMainButton(_ sender: UIButton) {
+        actor?.moveToMainVC()
+    }
+    
+    // MARK: - Helper
+    
+    func configureUI() {
+        let actor = SplashActor()
+        let router = SplashRouter()
+        
+        self.actor = actor
+        actor.router = router
+        
+        goToMainButton.addTarget(self, action: #selector(self.didTapGoToMainButton(_:)), for: .touchUpInside)
     }
 }
 

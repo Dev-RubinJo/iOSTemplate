@@ -10,22 +10,25 @@ import UIKit
 
 class BaseVC: UIViewController {
     
+    // MARK: - LifeCycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.hideKeyboardWhenTappedAround()
     }
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        switch self.isIphone {
+        switch self.checkDevice {
         case .iPhone:
             return [.portrait]
         case .iPad:
             return [.portrait, .landscape]
-        /// 혹시 모를 기종의 추가를 대비해 적용
+        // 혹시 모를 기종의 추가를 대비해 적용
         @unknown case _:
             return [.portrait]
         }
     }
+    
+    // MARK: - Helper
     
     func appearIndicator() {
         self.indicator.show()

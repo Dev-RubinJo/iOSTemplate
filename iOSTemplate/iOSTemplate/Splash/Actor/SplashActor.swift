@@ -10,29 +10,25 @@ import UIKit
 
 class SplashActor: SplashActorDelegate {
     
-    weak var view: SplashVCRouterDelegate?
-    var dataManager: SplashDataManagerDelegate?
+    // MARK: - Properties
+    
+    var router: SplashRouterDelegate?
+    
+    // MARK: - LifeCycle
+    
+    init() {}
+    
+    deinit {
+        print("SplashActor is deinit")
+    }
+    
+    // MARK: - Helper
     
     func didLoadSplash(splashVC vc: SplashVC) {
-        guard let token = UserDefaults.standard.value(forKey: "LoginToken") as? String else {
-            
-            DispatchQueue.main.async {
-                self.presentAlertServerErrorToVC(toVC: vc)
-            }
-            return
-        }
-         self.dataManager?.checkToken(fromVC: vc, token)
+        vc.presentAlert(title: "스플래시 표시 완료", message: "스플래시 표시 완료")
     }
     
-    func validToken() {
-        self.view?.presentMainVC()
-    }
-    
-    func presentAlertTokenErrorToVC(toVC vc: SplashVC, message: String) {
-        vc.presentAlert(title: "TOKEN_ERROR_TITLE".localized, message: message)
-    }
-    
-    func presentAlertServerErrorToVC(toVC vc: SplashVC) {
-        vc.presentAlert(title: "SERVER_ERROR_TITLE".localized, message: "SERVER_ERROR_MESSAGE".localized)
+    func moveToMainVC() {
+        router?.presentMainVC()
     }
 }

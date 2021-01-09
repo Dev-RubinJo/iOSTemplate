@@ -7,12 +7,15 @@
 //
 
 struct Server {
-    /// Web API를 호출하기 위한 서버 주소
-    private static let _api: String = ""
     
-    static var api: String {
+    static let shared = Server()
+    private init() {}
+    
+    /// Web API를 호출하기 위한 서버 주소
+    /// 테스트를 위해 https://reqres.in 에 나와있는 Native JavaScript 예제를 사용
+    var api: String {
         get {
-            self._api
+            "https://reqres.in/api/product/3"
         }
     }
 }

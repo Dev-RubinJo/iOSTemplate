@@ -7,16 +7,10 @@ target 'iOSTemplate' do
 
   pod 'Alamofire'
   pod 'AlamofireNetworkActivityIndicator'
-  pod 'AlamofireObjectMapper'
   pod 'SnapKit'
-  pod 'Kingfisher', '~> 5.0'
+  pod 'Kingfisher'
   pod 'SwiftyJSON'
-  pod 'RealmSwift'
-
-  pod 'Firebase/Analytics'
-  pod 'FirebaseStorage'
-  pod 'Fabric', '~> 1.7.5'
-  pod 'Crashlytics', '~> 3.10.1'
+#  pod 'RealmSwift'
 
   # Pods for iOSTemplate
 

@@ -9,6 +9,18 @@
 import UIKit
 
 extension UIColor {
+    /**
+     꼭 Assets.xcassets에 컬러를 넣어주고 강제 언래핑을 해줘야한다.
+     */
+    
+    static let blackMain: UIColor = UIColor(named: "BackgroundMain")!
+    static let grayDarkMain: UIColor = UIColor(named: "GrayDarkMain")!
+    static let graySoftMain: UIColor = UIColor(named: "GraySoftMain")!
+    static let yellowMain: UIColor = UIColor(named: "YellowMain")!
+    
+    static let borderDark: UIColor = UIColor(named: "BorderDark")!
+    static let borderSoft: UIColor = UIColor(named: "BorderSoft")!
+    
     convenience init(hex: UInt, alpha: CGFloat) {
         self.init(
             red: CGFloat((hex & 0xFF0000) >> 16) / 255.0,

@@ -10,60 +10,51 @@ import UIKit
 
 class MainVC: BaseVC, MainVCDelegate {
     
+    // MARK: - IBOutlet
+    
     @IBOutlet weak var mainVCLabel: UILabel!
+    
+    // MARK: - Properties
     
     var actor: MainActorDelegate?
     
+    // MARK: LifeCycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.initVC()
+        configureUI()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.actor?.presentBasicPopUp(toVC: self)
+        actor?.router?.presentBasicPopUp(toVC: self)
     }
     
-    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-        super.traitCollectionDidChange(previousTraitCollection)
-        self.setSystemColorModeUI()
+    deinit {
+        print("MainVC is deinit")
     }
     
-    func initVC() {
-        self.setSystemColorModeUI()
-    }
+    // MARK: - Helper
     
-    func setLightModeUI() {
-        self.view.backgroundColor = .white
-        self.mainVCLabel.textColor = .black
-    }
-    
-    func setDarkModeUI() {
-        self.view.backgroundColor = UIColor(hex: ColorPalette.blackMain, alpha: 1.0)
-        self.mainVCLabel.textColor = .white
-    }
-    
-    func setSystemColorModeUI() {
-        if self.isDarkMode {
-            self.setDarkModeUI()
-        } else {
-            self.setLightModeUI()
-        }
-    }
-}
-extension MainVC: MainVCRouterDelegate {
-    
-    static func makeMainVC() -> MainVC {
-        let vc = MainVC()
+    func configureUI() {
         let actor = MainActor()
         let dataManager = MainDataManager()
+        let router = MainRouter()
         
-        vc.actor = actor
-        actor.view = vc
+        self.actor = actor
+        actor.view = self
         actor.dataManager = dataManager
+        actor.router = router
         dataManager.actor = actor
-        
-        return vc
+    }
+}
+// MARK: - Basic PopUp Delegate
+extension MainVC: BasicPopUpDelegate {
+    
+    func pressBasicPopUpYesButton() {
+        mainVCLabel.numberOfLines = 2
+        mainVCLabel.text = "메인"
+//        actor?.router?.presentSplashVC()
+        actor?.getMainData(needVC: self)
     }
 }

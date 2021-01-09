@@ -6,10 +6,6 @@
 //  Copyright © 2020 YoobinJo. All rights reserved.
 //
 
-protocol BasicPopUpProtocol: PopUpProtocol {
-    
-}
-
 protocol BasicPopUpDelegate: class {
     
     func pressBasicPopUpYesButton()

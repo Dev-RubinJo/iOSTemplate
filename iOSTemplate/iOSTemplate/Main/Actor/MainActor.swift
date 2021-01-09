@@ -10,31 +10,41 @@ import UIKit
 
 class MainActor: MainActorDelegate {
 
-    weak var view: (MainVCDelegate & MainVCRouterDelegate)?
+    // MARK: - Properties
+    weak var view: MainVCDelegate?
     var dataManager: MainDataManagerDelegate?
+    var router: MainRouterDelegate?
+    
+    // MARK: - LifeCycle
+    
+    init() {}
+    
+    deinit {
+        print("MainActor is deinit")
+    }
+    
+    // MARK: - Helper
     
     func getMainData(needVC vc: MainVC) {
-        guard let userId = UserDefaults.standard.value(forKey: "UserId") as? String else {
-            
-            return
+        dataManager?.mainDataFetch { [weak self]response in
+            switch response.result {
+            case .success(let res):
+                if response.response?.statusCode == 200 {
+                    do {
+                        let data = try JSONSerialization.data(withJSONObject: res, options: [])
+                        let dataResponse = try JSONDecoder().decode(MainDataResponse.self, from: data)
+                        print(dataResponse)
+                    } catch {
+                        print("DEBUG: Error is \(error.localizedDescription)")
+                        dump(error)
+                    }
+                }
+                
+            case .failure(let error):
+                dump(error)
+                self?.presentAlertServerErrorToVC(toVC: vc)
+            }
         }
-        self.dataManager?.mainDataFetch(originVC: vc, userId: userId)
-    }
-    
-    func updateMainVCData(toVC vc: MainVC) {
-        
-    }
-    
-    func presentBasicPopUp(toVC vc: MainVC) {
-        let basicPopUpStoryboard = UIStoryboard(name: "BasicPopUp", bundle: Bundle.main/* nil이면 Bundle.main이 들어간다 */)
-        guard let basicPopUpView = basicPopUpStoryboard.instantiateViewController(withIdentifier: "BasicPopUp") as? BasicPopUp else {
-            return
-        }
-        basicPopUpView.basicPopUpDelegate = vc as BasicPopUpDelegate
-        basicPopUpView.modalPresentationStyle = .custom
-        basicPopUpView.modalTransitionStyle = .crossDissolve
-
-        vc.present(basicPopUpView, animated: true, completion: nil)
     }
     
     func presentAlertResponseErrorToVC(toVC vc: MainVC) {

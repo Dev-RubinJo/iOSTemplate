@@ -6,18 +6,20 @@
 //  Copyright © 2020 YoobinJo. All rights reserved.
 //
 
-import ObjectMapper
+import Foundation
 
-struct MainDataResponse {
-    var code: String!
-    var message: String!
+struct MainDataResponse: Codable {
+    var data: DataResponse!
 }
-extension MainDataResponse: Mappable {
-    init?(map: Map) {
-    }
+
+struct DataResponse: Codable {
+    var id: Int!
+    var name: String!
+    var year: Int!
+    var pantoneValue: String!
     
-    mutating func mapping(map: Map) {
-        code <- map["code"]
-        message <- map["message"]
+    private enum CodingKeys: String, CodingKey {
+        case id, name, year
+        case pantoneValue = "pantone_value"
     }
 }
